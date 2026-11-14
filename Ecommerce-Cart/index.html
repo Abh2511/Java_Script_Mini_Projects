@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>ShopSmart</h1>
+            <div class="cart-summary">
+                CartItems:<span id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="shop-heading">
+            <h2>Explore Products</h2>
+            <p>Find your Favourite</p>
+        </section>
+<section class="filters">
+    <input type="search" id="searchInput" placeholder="SearchProducts...">
+
+    <select id="categoryFilter">
+        <option value="all">All Categories</option>
+
+        <option value="Accessories">Accessories</option>
+
+        <option value="Audio">Audio</option>
+
+        <option value="Wearables">Wearables</option>
+    </select>
+
+    <select id="sortSelect">
+        <option value="default">Default Order</option>
+
+        <option value="low-high">Price: Low to High</option>
+
+        <option value="high-low">Price: High to Low</option>
+    </select>
+</section>
+<section class="shopLayout">
+    <div class="product-section">
+        <div id="productList" class="product-grid"></div>
+            <p id="emptyProducts" class="empty-message" hidden>
+             No Product found
+            </p>
+        </div>
+
+        <aside class="cart-panel">
+            <h2> Your Cart</h2>
+
+                <div id="cartItems">
+                    <p class="empty-message">Your Cart is empty</p>
+                </div>
+
+                <div class="cart-total">
+                    <span>Total</span>
+                    <strong id="cartTotal">0</strong>
+                </div>
+
+                <button id="clearCart" class="clear-button" type="button">
+                    clear Cart
+                </button>
+        </aside>
+</section>
+    </main>
+     <script src="script.js"></script>
+</body>
+</html>

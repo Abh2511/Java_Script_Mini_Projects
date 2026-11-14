@@ -16,7 +16,7 @@ const wind_speed = document.getElementById('wind-speed');
     const weather_data = await fetch(`${url}`).then
     (response => response.json());
 
-    temperature.innerHTML = `${weather_data.main.temp}`;    
+    temperature.innerHTML = `${weather_data.main.temp - 273.15}`;    
     
  }
 searchBtn.addEventListener('click',()=>{
